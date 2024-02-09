@@ -38,7 +38,7 @@ mail("mhps@mhps.com.br", "Formulário de contato do site",$nosso,"From: $email")
   </div>
             </div>
         </section>
-        <img class="apresentacao__imagem" src="./assets/imagem.jpg" alt="Figura com códigos aleatorios">
+        <img class="apresentacao__imagem" src="assets/imagem.jpg" alt="Figura com códigos aleatorios">
     </main>
 
 		

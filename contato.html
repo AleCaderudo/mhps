@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<script language="JavaScript" type="text/javascript">
+function checa2(nform) {
+	if (!nform.nome.value.match(/^[\w-\W]+[\w-\W]+$/)) {
+		alert("Preencha o campo nome corretamente");
+		nform.nome.focus();
+		nform.nome.select();
+		return false;
+		}
+	if (!nform.email.value.match(/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,6})$/)) {
+		alert("Preencha o campo e-mail corretamente");
+		nform.email.focus();
+		nform.email.select();
+		return false;
+		}
+	if (!nform.mensagem.value.match(/^[\w-\W]+[\w-\W]+[\w-\W]+[\w-\W]+$/)) {
+		alert("Preencha o campo mensagem");
+		nform.mensagem.focus();
+		nform.mensagem.select();
+		return false;
+		}
+}
+</script>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - MHPS</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>	
+<body>
+	
+	<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="index.html">Home</a>
+            <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
+			<a class="cabecalho__menu__link" href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+<!-- content begins -->
+		
+		<main class="apresentacao">
+        <section class="apresentacao__conteudo">
+            <h1 class="apresentacao__conteudo__titulo"><strong>Contato </strong></h1>
+           
+            <form method="post" name="myform" onSubmit="return checa2(this);" action="contatoinsert.php">
+              
+        <table cellspacing="2" cellpadding="2" border="0">
+          <tr> 
+            <td class="apresentacao__conteudo__texto">Nome</td>
+            <td width="392"><input type="text" value="" class="" name="nome"></td></tr>
+            <tr> 
+            <td class="apresentacao__conteudo__texto">Telefone</td>
+            <td width="392"><input type="text" value="" class="" name="telefone"></td></tr>
+            <tr>
+            <td class="apresentacao__conteudo__texto">E-mail</td>
+          <td><input type="text" value="" class="form" name="email"></td>
+          </tr>
+			<tr> 
+            <td class="apresentacao__conteudo__texto">Cidade</td>
+            <td colspan="3"><input value="" type="text" name="cidade" class=""></td>
+          </tr>
+          <tr> 
+            <td class="apresentacao__conteudo__texto">Mensagem</td>
+            <td colspan="3"><textarea name="mensagem" cols="50" rows="8" nowrap class=""></textarea></td>
+          </tr>
+        </table>
+              
+<div align="center">
+	<br>
+                <input name="OK" type="submit" class="botao" id="OK" value="Enviar Mensagem">
+        </div> 
+	  </form>
+			<br>
+			<p class="contato_msg">Ou se preferir mande uma mensagem por  <a class="sem_bubl2" href="mailto:mhps@mhps.com.br" title="Entrar em contato via E-mail">E-mail</a> ou inicie uma conversa no <a class="sem_bubl2" href="https://wa.me/5554999742403" target="_blank" title="Entrar em contato via Whatsapp">Whatsapp</a></p>
+            </div>
+        </section>
+        <img class="apresentacao__imagem" src="./assets/imagem.jpg" alt="Figura com códigos aleatorios">
+    </main>
+
+		
+   </div>
+</div>
+<footer class="rodape">
+        <p><a class="sem_bubl" href="http://mhps.com.br" target="_blank" title="Desenvolvido por MHPS">Desenvolvido por MHPS</a></p>
+    </footer>
+</body>
+</html>

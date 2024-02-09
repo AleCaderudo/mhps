@@ -1,0 +1,181 @@
+a:link {
+	color: #0041A3;
+}
+
+a:hover, {
+	text-decoration: none;
+	color: #FF0000;
+}
+
+a:visited {
+	color: #0041A3;
+}
+body {
+	margin: 0px;
+	padding: 0px;
+	background: #FFFFFF url(images/img012.gif) repeat-x;
+	color: #333333;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+}
+
+#header {
+	width: 778px;
+	height: 130px;
+	padding-left: 10px;
+}
+
+#logo {
+	float: left;
+	width: 220px;
+}
+
+#logo h1 {
+	padding-top: 38px;
+	font-size: 28px;
+	font-weight: normal;
+}
+
+
+#logo h2 a {
+	color: #586BAA;
+}
+
+#logo a {
+	text-decoration: none;
+	text-transform: lowercase;
+	font-style: italic;
+}
+#m1
+{
+   margin: -15px 0 0 0;
+   padding-left: 270px;	
+}
+#menu {
+}
+
+#menu ul {
+	margin: 0;
+	padding-top: 75px;
+	list-style: none;
+}
+
+#menu li {
+	display: inline;
+}
+
+#menu a {
+	display: block;
+	float: left;
+	width: 100px;
+	height: 30px;
+	margin-left: 1px;
+	padding-top: 15px;
+	background: #FFFFFF url(images/img02.gif) repeat-x;
+	border: 1px solid #FFFFFF;
+	text-align: center;
+	text-decoration: none;
+	color: #ffffff;
+	font-weight: bold;
+	font-size:16px;
+}
+
+#menu a:hover {
+	height: 28px;
+	margin-top: 5px;
+}
+
+#content
+{
+width: 778px;
+padding: 10px
+}
+
+#left
+{
+	float: left;
+	width: 190px;
+	padding-right: 1em;
+}
+
+#left H3
+{
+width: 185px;
+height: 27px;
+font-size: 14px;
+font-weight: bold;
+padding-left: 15px;
+padding-top: 5px;
+text-transform: lowercase;
+color: #ffffff;
+background: url(images/h3.gif) no-repeat
+}
+
+#right
+{
+float: right;
+width: 560px;
+}
+
+#right H1
+{
+color: #0041A3;
+margin: 0;
+padding: 0;
+font-size: 24px;
+}
+
+#right H2
+{
+color: #0041A3;
+margin: 0;
+padding: 0;
+font-size: 18px;
+}
+
+#right img
+{
+padding: 2px;
+margin: 10px;
+border: 1px solid #000000
+}
+
+#right .pic
+{
+float: left;
+
+}
+
+#right .file { 
+width: 560px;
+}
+#right .miolo {
+width:560;
+overflow:visible }
+
+#metamorph1 {
+	clear: both;
+	height: 30px;
+	padding: 15px 0;
+	background: #E2E2E2;
+	text-align: center;
+}
+
+#metamorph1 p {
+	margin: 0;
+	color: #0041A3;
+}
+
+#metamorph1 a {
+	color: #0041A3;
+}
+
+#metamorph1 a:hover {
+	color: #FF0000;
+}
+.small p {
+	margin: 0;
+	font-size: 11px;
+	text-align: center;
+}

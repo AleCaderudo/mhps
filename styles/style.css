@@ -5,7 +5,6 @@
     --cor-secundaria: #F6F6F6;
     --cor-terciaria: #22D4FD;
     --cor-hover: #272727;
-
     --fonte-primaria: 'Krona One', sans-serif;
     --fonte-secundaria: 'Montserrat', sans-serif;
 }
@@ -91,16 +90,39 @@ body{
     background-color: var(--cor-hover);
 }
 .apresentacao__imagem{
-    width: 50%;
+    width: 45%;
 }
-.rodape{
-    color: var(--cor-primaria);
+.rodape {
+	color: var(--cor-primaria);
     background-color: var(--cor-terciaria);
-    padding: 24px;
+    padding: 25px;
     text-align: center;
+	text-decoration: none;
     font-family: var(--fonte-secundaria);
-    font-size: 1.5rem;
+	font-size: 1.5rem;
     font-weight: 400;
+	
+	}
+.sem_bubl {
+	font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+	}
+.sem_bubl2 {
+	font-family: var(--fonte-secundaria);
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+	}
+.contato_msg {
+	font-size: 1rem;
+    font-family: var(--fonte-secundaria);
+	text-align: center
+}
+
 }
 
 @media (max-width: 1200px) {
@@ -117,4 +139,5 @@ body{
     .apresentacao__conteudo{
         width: auto;
     }
+	
 }

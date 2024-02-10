@@ -2,28 +2,7 @@
 <html lang="pt-br">
 
 <head>
-<script language="JavaScript" type="text/javascript">
-function checa2(nform) {
-	if (!nform.nome.value.match(/^[\w-\W]+[\w-\W]+$/)) {
-		alert("Preencha o campo nome corretamente");
-		nform.nome.focus();
-		nform.nome.select();
-		return false;
-		}
-	if (!nform.email.value.match(/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,6})$/)) {
-		alert("Preencha o campo e-mail corretamente");
-		nform.email.focus();
-		nform.email.select();
-		return false;
-		}
-	if (!nform.mensagem.value.match(/^[\w-\W]+[\w-\W]+[\w-\W]+[\w-\W]+$/)) {
-		alert("Preencha o campo mensagem");
-		nform.mensagem.focus();
-		nform.mensagem.select();
-		return false;
-		}
-}
-</script>
+
 <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -45,12 +24,12 @@ function checa2(nform) {
 		
 		<main class="apresentacao">
         <section class="apresentacao__conteudo">
-            <h1 class="apresentacao__conteudo__titulo"><strong>Contato </strong></h1>
+            <h1 class="apresentacao__conteudo__titulo"><strong>Contato </strong><br><br><br></h1>
            
             
 			<p class="contato_msg">Para contato envie uma mensagem por  <a class="sem_bubl2" href="mailto:mhps@mhps.com.br" title="Entrar em contato via E-mail">E-mail</a> ou inicie uma conversa no <a class="sem_bubl2" href="https://wa.me/5554999742403" target="_blank" title="Entrar em contato via Whatsapp">Whatsapp</a></p>
 			
-            </div><br><br><br><br><br>
+            </div><br><br><br><br><br><br><br><br></p>
         </section>
         <img class="apresentacao__imagem" src="./assets/imagem.jpg" alt="Figura com códigos aleatorios">
     </main>

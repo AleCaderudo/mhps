@@ -26,12 +26,20 @@
         <section class="apresentacao__conteudo">
             <h1 class="apresentacao__conteudo__titulo"><strong>Contato</strong></h1>
  <p class="contato_msg">          
- <? 
-$cliente = "\n Caro(a) $nome, sua mensagem foi enviada e assim que possivel retornaremos. \n Atenciosamente \n MHPS";
-$nosso = "\n Nome: $nome \n \n Telefone: $telefone \n \n E-Mail: $email \n \n  Cidade: $cidade \n \n Mensagem: $mensagem \n \n \n Data do envio da mensagem ".date("d/m/Y")." as ".date("H:i")."";
-mail("$email", "MHPS", $cliente ,"From: mhps@mhps.com.br");
-mail("mhps@mhps.com.br", "Formulário de contato do site",$nosso,"From: $email");
-
+ ?php
+if(!empty($_POST["enviar"])) {
+  $nome = $_POST["nomeUsuario"];
+  $email = $_POST["email"];
+  $assunto = $_POST["assunto"];
+  $content = $_POST["conteudo"];
+  $enviarParaEmail = "mhps@mhps.com.br";
+  $mailCabecalhos = "De: " . $nome . "<". $email .">\r\n";
+  if(mail($enviarParaEmail, $assunto , $conteudo, $mailCabecalhos)) {
+      $message = "Seu contato foi recebido com sucesso.";
+      $type = "Sucesso";
+  }
+}
+require_once "resposta.php";
 ?>
 		  Sua mensagem foi enviada com sucesso, Obrigado. </p>
 		<p>&nbsp;   </p>

@@ -47,34 +47,14 @@ function checa2(nform) {
         <section class="apresentacao__conteudo">
             <h1 class="apresentacao__conteudo__titulo"><strong>Contato </strong></h1>
            
-            <form method="post" name="myform" onSubmit="return checa2(this);" action="contatoinsert.php">
-              
-        <table cellspacing="2" cellpadding="2" border="0">
-          <tr> 
-            <td class="apresentacao__conteudo__texto">Nome</td>
-            <td width="392"><input type="text" value="" class="" name="nome"></td></tr>
-            <tr> 
-            <td class="apresentacao__conteudo__texto">Telefone</td>
-            <td width="392"><input type="text" value="" class="" name="telefone"></td></tr>
-            <tr>
-            <td class="apresentacao__conteudo__texto">E-mail</td>
-          <td><input type="text" value="" class="form" name="email"></td>
-          </tr>
-			<tr> 
-            <td class="apresentacao__conteudo__texto">Cidade</td>
-            <td colspan="3"><input value="" type="text" name="cidade" class=""></td>
-          </tr>
-          <tr> 
-            <td class="apresentacao__conteudo__texto">Mensagem</td>
-            <td colspan="3"><textarea name="mensagem" cols="50" rows="8" nowrap class=""></textarea></td>
-          </tr>
-        </table>
-              
-<div align="center">
-	<br><br><br>
-                <input name="OK" type="submit" class="botao" id="OK" value="Enviar Mensagem">
-        </div> 
-	  </form>
+            <form name="frmContact" id="formContato" method="post" action="contatoinsert.php" enctype="multipart/form-data">
+                <label style="padding-top: 20px;">Nome:</label><br /> <input
+                    type="text" name="nomeUsuario" id="nomeUsuario" />
+                <label>E-mail</label> <input type="text" id="email" />
+                <label>Assunto</label><br /> <input type="text" name="Assunto" id="assunto" />
+                <label>Mensagem</label><br /> <textarea name="conteudo" id="conteudo" cols="70" rows="7"></textarea>
+                <input type="submit" name="enviar" class="btn-submit" value="Enviar" />
+        </form>
 			<br>
 			<p class="contato_msg">Se preferir mande uma mensagem por  <a class="sem_bubl2" href="mailto:mhps@mhps.com.br" title="Entrar em contato via E-mail">E-mail</a> ou inicie uma conversa no <a class="sem_bubl2" href="https://wa.me/5554999742403" target="_blank" title="Entrar em contato via Whatsapp">Whatsapp</a></p>
 			

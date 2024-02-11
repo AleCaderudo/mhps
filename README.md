@@ -11,7 +11,7 @@
 
 # Eu mesmo
 
-[<img loading="lazy" src="https://avatars.githubusercontent.com/u/139296557?v=4" width=115><br><sub>Carlos Alexandre da Motta</sub>](https:www.mhps.com.br)
+[<img loading="lazy" src="https://avatars.githubusercontent.com/u/139296557?v=4" width=115><br><sub>Carlos Alexandre da Motta</sub>](https://www.mhps.com.br)
 
 
 

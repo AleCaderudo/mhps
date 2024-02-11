@@ -9,7 +9,7 @@
   <img src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white">
   </div>
 
-# Time
+# Eu mesmo
 
 [<img loading="lazy" src="https://avatars.githubusercontent.com/u/139296557?v=4" width=115><br><sub>Carlos Alexandre</sub>](https://github.com/AleCaderudo)
 

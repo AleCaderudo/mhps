@@ -1,0 +1,19 @@
+.contato__link__whatss {
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.contato__link__whatss:hover {
+    color: white;
+}
+
+.contato_msg {
+    text-decoration: none;
+	font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+	text-align: center
+}
+
+@media (max-width: 1200px) {
+    
+}
